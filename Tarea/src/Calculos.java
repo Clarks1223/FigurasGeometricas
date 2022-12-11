@@ -10,11 +10,11 @@ public class Calculos {
         form=Math.pow(lado,2);
         tot=form;
         cal= new Geometria_UchuariPablo (lado, form, tot);
-        System.out.println("El area es: "+tot);
+        System.out.println("El area es: "+cal.getTotal());
     }
     public void area_Cir(){
         double PI=3.14, radio, tot, form;
-        System.out.print("Ingrese el lado del cuadrado: ");
+        System.out.print("Ingrese el radio del circulo: ");
         radio=sc.nextDouble();
         form=PI*Math.pow(radio,2);
         tot=form;
@@ -71,9 +71,9 @@ public class Calculos {
     }
     public void volum_cil(){
         double PI=3.14, radio, alt, form, tot;
-        System.out.println("Ingrese el radio");
+        System.out.print("Ingrese el radio");
         radio=sc.nextDouble();
-        System.out.println("Ingrese la altura");
+        System.out.print("Ingrese la altura");
         alt=sc.nextDouble();
         form=PI*radio*alt;
         tot=form;
@@ -81,7 +81,8 @@ public class Calculos {
         System.out.println("El volumen es: "+tot);
     }
     public void volum_esf(){
-        double cons=3/4, PI=3.14, radio, form, tot;
+        double cons=4/3;
+        double PI=3.14, radio, form, tot;
         System.out.print("Ingrese el radio: ");
         radio=sc.nextDouble();
         form=cons*PI*Math.pow(radio, 2);
