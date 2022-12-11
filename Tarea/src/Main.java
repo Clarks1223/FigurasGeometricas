@@ -59,7 +59,7 @@ public class Main {
         System.out.println("Menu Principal");
         System.out.println("1. Area");
         System.out.println("2. Perimietro");
-        System.out.println("3. volumene");
+        System.out.println("3. volumen");
         System.out.println("0. Salir");
         System.out.print("Opcion: ");
         op=sc.nextInt();
