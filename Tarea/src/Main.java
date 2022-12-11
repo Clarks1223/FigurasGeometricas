@@ -16,7 +16,6 @@ public class Main {
                         switch (submenu){
                             case 1:
                                 cls.area_Cuad();
-
                                 break;
                             case 2:
                                 cls.area_Cir();
