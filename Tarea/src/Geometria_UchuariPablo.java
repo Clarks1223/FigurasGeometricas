@@ -1,56 +1,72 @@
 public class Geometria_UchuariPablo {
-    /*area*/
-    double lado;
-    double radio;
-    double diag_ma;
-    double diag_men;
-    /*Perimetro*/
-    double PI;
-    /*Volumen*/
+    double formula;
+    double total;
+    double var1;
+    double var2;
+    double var3;
     public Geometria_UchuariPablo(){
-        lado=0;
-        radio=0;
-        diag_ma=0;
-        diag_men=0;
-        PI=3.14;
+        formula=0;
+        var1=0;
+        var2=0;
+        var3=0;
+        total=0;
     }
-    public double getLado() {
-        return lado;
+    //figuras con 1 variable
+    public Geometria_UchuariPablo(double dat1,double form, double tot){
+        formula=form;
+        var1=dat1;
+        total=tot;
     }
-
-    public void setLado(double lado) {
-        this.lado = lado;
+    public Geometria_UchuariPablo(double dat1, double dat2, double form, double tot){
+        formula=form;
+        total=tot;
+        var1=dat1;
+        var2=dat2;
     }
-
-    public double getRadio() {
-        return radio;
+    public Geometria_UchuariPablo(double dat1, double dat2, double dat3, double form, double tot){
+        formula=form;
+        total=tot;
+        var1=dat1;
+        var2=dat2;
+        var3=dat3;
     }
-
-    public void setRadio(double radio) {
-        this.radio = radio;
-    }
-
-    public double getDiag_ma() {
-        return diag_ma;
-    }
-
-    public void setDiag_ma(double diag_ma) {
-        this.diag_ma = diag_ma;
-    }
-
-    public double getDiag_men() {
-        return diag_men;
+    public double getFormula() {
+        return formula;
     }
 
-    public void setDiag_men(double diag_men) {
-        this.diag_men = diag_men;
+    public void setFormula(double formula) {
+        this.formula = formula;
     }
 
-    public double getPI() {
-        return PI;
+    public double getTotal() {
+        return total;
     }
 
-    public void setPI(double PI) {
-        this.PI = PI;
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
+    public double getVar1() {
+        return var1;
+    }
+
+    public void setVar1(double var1) {
+        this.var1 = var1;
+    }
+
+    public double getVar2() {
+        return var2;
+    }
+
+    public void setVar2(double var2) {
+        this.var2 = var2;
+    }
+
+    public double getVar3() {
+        return var3;
+    }
+
+    public void setVar3(double var3) {
+        this.var3 = var3;
     }
 }
