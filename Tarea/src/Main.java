@@ -10,12 +10,13 @@ public class Main {
             menu=Menu();
             switch (menu){
                 case 1:
-                    System.out.println("SUB MENU AREAS");
                     while (submenu!=0){
+                        System.out.println("*SUB MENU AREAS*");
                         submenu=Sub_Menu();
                         switch (submenu){
                             case 1:
                                 cls.area_Cuad();
+
                                 break;
                             case 2:
                                 cls.area_Cir();
@@ -25,9 +26,11 @@ public class Main {
                                 break;
                         }
                     }
+                    System.out.println("Regresando");
+                    submenu=1;
                     break;
                 case 2:
-                    System.out.println("SUB MENU PERIMETROS");
+                    System.out.println("*SUB MENU PERIMETROS*");
                     while (submenu!=0){
                         submenu=Sub_Menu();
                         switch (submenu){
@@ -42,10 +45,13 @@ public class Main {
                                 break;
                         }
                     }
+                    System.out.println("Regresando");
+                    submenu=1;
                     break;
                 case 3:
                     while (submenu!=0){
-                        submenu=Sub_Menu();
+                        System.out.println("*SUB MENU VOLUMENES*");
+                        submenu=Sub_MenuVolumen();
                         switch (submenu){
                             case 1:
                                 cls.volum_cub();
@@ -58,7 +64,8 @@ public class Main {
                                 break;
                         }
                     }
-                    System.out.println("SUB MENU VOLUMENES");
+                    System.out.println("Regresando");
+                    submenu=1;
                     break;
             }
         }
@@ -66,7 +73,7 @@ public class Main {
     }
     static int Menu(){
         int op=0;
-        System.out.println("Menu Principal");
+        System.out.println("***MENU PRINCIPAL***");
         System.out.println("1. Area");
         System.out.println("2. Perimietro");
         System.out.println("3. volumen");
@@ -85,6 +92,21 @@ public class Main {
         System.out.println("1. Cuadrado");
         System.out.println("2. Circulo");
         System.out.println("3. Rombo");
+        System.out.println("0. Volver al menu principal");
+        System.out.print("Opcion: ");
+        op=sc.nextInt();
+        while (op!=1 && op!=2 && op!=3 && op!=0){
+            System.out.println("Dato incorrecto");
+            System.out.print("Opcion: ");
+            op=sc.nextInt();
+        }
+        return op;
+    }
+    static int Sub_MenuVolumen(){
+        int op=0;
+        System.out.println("1. Cubo");
+        System.out.println("2. Cilindro");
+        System.out.println("3. Esfera");
         System.out.println("0. Volver al menu principal");
         System.out.print("Opcion: ");
         op=sc.nextInt();

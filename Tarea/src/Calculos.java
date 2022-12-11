@@ -10,6 +10,7 @@ public class Calculos {
         form=Math.pow(lado,2);
         tot=form;
         cal= new Geometria_UchuariPablo (lado, form, tot);
+        System.out.println("El area es: "+tot);
     }
     public void area_Cir(){
         double PI=3.14, radio, tot, form;
@@ -18,6 +19,7 @@ public class Calculos {
         form=PI*Math.pow(radio,2);
         tot=form;
         cal= new Geometria_UchuariPablo (PI, radio, form, tot);
+        System.out.println("El area es: "+tot);
     }
     public void area_Romb(){
         double diag1, diag2, tot, form;
@@ -28,6 +30,7 @@ public class Calculos {
         form=(diag1*diag2)/2;
         tot=form;
         cal= new Geometria_UchuariPablo (diag1, diag2, form, tot);
+        System.out.println("El area es: "+tot);
     }
 
     public void Per_cuad(){
@@ -37,6 +40,7 @@ public class Calculos {
         form=lado+lado+lado+lado;
         tot=form;
         cal= new Geometria_UchuariPablo (lado, form, tot);
+        System.out.println("El perimetro es: "+tot);
     }
     public void Per_circ(){
         double PI=3.14, radio, form, tot;
@@ -45,6 +49,7 @@ public class Calculos {
         form=PI*2*radio;
         tot=form;
         cal= new Geometria_UchuariPablo (PI, radio, form, tot);
+        System.out.println("El perimetro es: "+tot);
     }
     public void Per_Rom(){
         double lado, form, tot;
@@ -53,6 +58,7 @@ public class Calculos {
         form=lado+lado+lado+lado;
         tot=form;
         cal= new Geometria_UchuariPablo (lado, form, tot);
+        System.out.println("El perimetro es: "+tot);
     }
     public void volum_cub(){
         double lado,form, tot;
@@ -61,6 +67,7 @@ public class Calculos {
         form=Math.pow(lado,3);
         tot=form;
         cal = new Geometria_UchuariPablo(lado, form, tot);
+        System.out.println("El volumen es: "+tot);
     }
     public void volum_cil(){
         double PI=3.14, radio, alt, form, tot;
@@ -71,6 +78,7 @@ public class Calculos {
         form=PI*radio*alt;
         tot=form;
         cal=new Geometria_UchuariPablo(PI, radio, alt, form, tot);
+        System.out.println("El volumen es: "+tot);
     }
     public void volum_esf(){
         double cons=3/4, PI=3.14, radio, form, tot;
@@ -79,5 +87,6 @@ public class Calculos {
         form=cons*PI*Math.pow(radio, 2);
         tot=form;
         cal = new Geometria_UchuariPablo(cons, PI, radio, form, tot);
+        System.out.println("El volumen es: "+tot);
     }
 }
