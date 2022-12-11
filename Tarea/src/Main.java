@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     static Scanner sc=new Scanner (System.in);
     public static void main(String[] args) {
+        Calculos cls= new Calculos();
         int menu=1;
         int submenu=1;
         while (menu !=0){
@@ -14,10 +15,13 @@ public class Main {
                         submenu=Sub_Menu();
                         switch (submenu){
                             case 1:
+                                cls.area_Cuad();
                                 break;
                             case 2:
+                                cls.area_Cir();
                                 break;
                             case 3:
+                                cls.area_Romb();
                                 break;
                         }
                     }
@@ -28,10 +32,13 @@ public class Main {
                         submenu=Sub_Menu();
                         switch (submenu){
                             case 1:
+                                cls.Per_cuad();
                                 break;
                             case 2:
+                                cls.Per_circ();
                                 break;
                             case 3:
+                                cls.Per_Rom();
                                 break;
                         }
                     }
@@ -41,10 +48,13 @@ public class Main {
                         submenu=Sub_Menu();
                         switch (submenu){
                             case 1:
+                                cls.volum_cub();
                                 break;
                             case 2:
+                                cls.volum_cil();
                                 break;
                             case 3:
+                                cls.volum_esf();
                                 break;
                         }
                     }

@@ -13,22 +13,24 @@ public class Geometria_UchuariPablo {
     }
     //figuras con 1 variable
     public Geometria_UchuariPablo(double dat1,double form, double tot){
-        formula=form;
         var1=dat1;
+        formula=form;
         total=tot;
     }
+    //Figuras con 2 variables
     public Geometria_UchuariPablo(double dat1, double dat2, double form, double tot){
-        formula=form;
-        total=tot;
         var1=dat1;
         var2=dat2;
-    }
-    public Geometria_UchuariPablo(double dat1, double dat2, double dat3, double form, double tot){
         formula=form;
         total=tot;
+    }
+    //Figuras con 3 variables
+    public Geometria_UchuariPablo(double dat1, double dat2, double dat3, double form, double tot){
         var1=dat1;
         var2=dat2;
         var3=dat3;
+        formula=form;
+        total=tot;
     }
     public double getFormula() {
         return formula;
