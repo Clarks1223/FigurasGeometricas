@@ -4,69 +4,74 @@ public class Main {
     static Scanner sc=new Scanner (System.in);
     public static void main(String[] args) {
         Calculos cls= new Calculos();
-        int menu=1;
-        int submenu=1;
-        while (menu !=0){
-            menu=Menu();
-            switch (menu){
-                case 1:
-                    while (submenu!=0){
-                        System.out.println("*SUB MENU AREAS*");
-                        submenu=Sub_Menu();
-                        switch (submenu){
-                            case 1:
-                                cls.area_Cuad();
-                                break;
-                            case 2:
-                                cls.area_Cir();
-                                break;
-                            case 3:
-                                cls.area_Romb();
-                                break;
+        try {
+            int menu = 1;
+            int submenu = 1;
+            while (menu != 0) {
+                menu = Menu();
+                switch (menu) {
+                    case 1:
+                        while (submenu != 0) {
+                            System.out.println("*SUB MENU AREAS*");
+                            submenu = Sub_Menu();
+                            switch (submenu) {
+                                case 1:
+                                    cls.area_Cuad();
+                                    break;
+                                case 2:
+                                    cls.area_Cir();
+                                    break;
+                                case 3:
+                                    cls.area_Romb();
+                                    break;
+                            }
                         }
-                    }
-                    System.out.println("Regresando");
-                    submenu=1;
-                    break;
-                case 2:
-                    System.out.println("*SUB MENU PERIMETROS*");
-                    while (submenu!=0){
-                        submenu=Sub_Menu();
-                        switch (submenu){
-                            case 1:
-                                cls.Per_cuad();
-                                break;
-                            case 2:
-                                cls.Per_circ();
-                                break;
-                            case 3:
-                                cls.Per_Rom();
-                                break;
+                        System.out.println("Regresando");
+                        submenu = 1;
+                        break;
+                    case 2:
+                        System.out.println("*SUB MENU PERIMETROS*");
+                        while (submenu != 0) {
+                            submenu = Sub_Menu();
+                            switch (submenu) {
+                                case 1:
+                                    cls.Per_cuad();
+                                    break;
+                                case 2:
+                                    cls.Per_circ();
+                                    break;
+                                case 3:
+                                    cls.Per_Rom();
+                                    break;
+                            }
                         }
-                    }
-                    System.out.println("Regresando");
-                    submenu=1;
-                    break;
-                case 3:
-                    while (submenu!=0){
-                        System.out.println("*SUB MENU VOLUMENES*");
-                        submenu=Sub_MenuVolumen();
-                        switch (submenu){
-                            case 1:
-                                cls.volum_cub();
-                                break;
-                            case 2:
-                                cls.volum_cil();
-                                break;
-                            case 3:
-                                cls.volum_esf();
-                                break;
+                        System.out.println("Regresando");
+                        submenu = 1;
+                        break;
+                    case 3:
+                        while (submenu != 0) {
+                            System.out.println("*SUB MENU VOLUMENES*");
+                            submenu = Sub_MenuVolumen();
+                            switch (submenu) {
+                                case 1:
+                                    cls.volum_cub();
+                                    break;
+                                case 2:
+                                    cls.volum_cil();
+                                    break;
+                                case 3:
+                                    cls.volum_esf();
+                                    break;
+                            }
                         }
-                    }
-                    System.out.println("Regresando");
-                    submenu=1;
-                    break;
+                        System.out.println("Regresando");
+                        submenu = 1;
+                        break;
+                }
             }
+        }catch(Exception Ex){
+            System.out.println("Ingreso de datos inocrrecto\n el programa terminara");
+
         }
 
     }

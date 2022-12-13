@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Calculos {
     Geometria_UchuariPablo cal = new Geometria_UchuariPablo();
     Scanner sc=new Scanner(System.in);
+    private double PI=3.1416;
     public void area_Cuad(){
         double lado, tot, form;
         System.out.print("Ingrese el lado del cuadrado: ");
@@ -13,7 +14,7 @@ public class Calculos {
         System.out.println("El area es: "+cal.getTotal());
     }
     public void area_Cir(){
-        double PI=3.14, radio, tot, form;
+        double radio, tot, form;
         System.out.print("Ingrese el radio del circulo: ");
         radio=sc.nextDouble();
         form=PI*Math.pow(radio,2);
@@ -43,7 +44,7 @@ public class Calculos {
         System.out.println("El perimetro es: "+cal.getTotal());
     }
     public void Per_circ(){
-        double PI=3.14, radio, form, tot;
+        double radio, form, tot;
         System.out.print("Ingrese el radio del circulo: ");
         radio=sc.nextDouble();
         form=PI*2*radio;
@@ -70,7 +71,7 @@ public class Calculos {
         System.out.println("El volumen es: "+cal.getTotal());
     }
     public void volum_cil(){
-        double PI=3.14, radio, alt, form, tot;
+        double radio, alt, form, tot;
         System.out.print("Ingrese el radio");
         radio=sc.nextDouble();
         System.out.print("Ingrese la altura");
@@ -81,11 +82,11 @@ public class Calculos {
         System.out.println("El volumen es: "+cal.getTotal());
     }
     public void volum_esf(){
-        double cons=4/3;
-        double PI=3.14, radio, form, tot;
+        double cons=1.3333;
+        double radio, form, tot;
         System.out.print("Ingrese el radio: ");
         radio=sc.nextDouble();
-        form=cons*PI*Math.pow(radio, 2);
+        form=cons*PI*Math.pow(radio, 3);
         tot=form;
         cal = new Geometria_UchuariPablo(cons, PI, radio, form, tot);
         System.out.println("El volumen es: "+cal.getTotal());
